@@ -1,58 +1,64 @@
 
 module Prelude.Minimal (
     -- * Basic data types
-    -- ** Bool
+    -- ** @Bool@
     Bool(False, True),
     (&&), (||), not, otherwise,
 
-    -- ** Maybe
+    -- ** @Maybe@
     Maybe(Nothing, Just),
     fromMaybe, isNothing, isJust,
 
-    -- ** Either
+    -- ** @Either@
     Either(Left, Right),
     isLeft, isRight,
 
-    -- ** Ordering
-    Ordering(LT, EQ, GT),
-
-    -- ** Tuples
+    -- ** @Tuple@
     fst, snd, curry, uncurry,
 
-    -- ** Lists
+    -- ** @List@
     head, last, tail, init, null, length, (!!),
     reverse,
 
+    -- ** @Ordering@
+    Ordering(LT, EQ, GT),
+
     -- * Type Classes
 
-    -- ** Category
+    -- ** @Category@
     Category(id, (.)),
 
-    -- ** Monoid
+    -- ** @Monoid@
     Monoid(mempty, mappend, mconcat),
     (<>),
 
-    -- ** Functor
+    -- ** @Functor@
     Functor(fmap, (<$)),
     void, (<$>), ($>),
 
-    -- *** Applicative and Monad
+    -- ** @Applicative@
     Applicative(pure, (<*>), (*>), (<*)),
     (<**>),
+
+    -- ** @Monad@
     Monad((>>=), (>>)),
     (=<<), (>=>), (<=<),join,
 
-    -- *** Alternative and MonadPlus
+    -- ** @Alternative@
     Alternative(empty, (<|>), some, many),
     optional, asum,
+
+    -- ** @MonadPlus@
     MonadPlus (mzero, mplus),
     guard, msum, mfilter,
 
-    -- ** Foldable and Traversable
+    -- ** @Foldable@
     Foldable(fold, foldMap, foldr, foldr', foldl, foldl'),
     toList, concat, concatMap,
     and, or, any, all, sum, product, maximum, maximumBy,
     minimum, minimumBy, elem, notElem, find,
+
+    -- ** @Traversable@
     Traversable(traverse, sequenceA),
     for,
 
