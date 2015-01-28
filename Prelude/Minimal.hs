@@ -50,6 +50,7 @@ module Prelude.Minimal (
 
     -- ** Foldable and Traversable
     Foldable(fold, foldMap, foldr, foldr', foldl, foldl'),
+    toList, concat, concatMap,
     and, or, any, all, sum, product, maximum, maximumBy,
     minimum, minimumBy, elem, notElem, find,
     Traversable(traverse, sequenceA),
