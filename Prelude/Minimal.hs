@@ -19,6 +19,10 @@ module Prelude.Minimal (
     -- ** Tuples
     fst, snd, curry, uncurry,
 
+    -- ** Lists
+    head, last, tail, init, null, length, (!!),
+    reverse,
+
     -- * Type Classes
 
     -- ** Category
@@ -126,6 +130,8 @@ import Data.Maybe
 import Data.Either
 
 import Data.Tuple
+
+import Data.List
 
 import Control.Category (Category(..))
 import Data.Monoid
