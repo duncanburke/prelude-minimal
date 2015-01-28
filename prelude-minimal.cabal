@@ -1,7 +1,14 @@
 name:                prelude-minimal
 version:             0.1.0.0
-synopsis:            A minimal, classy, alternate Prelude
--- description:
+synopsis:            An alternate Prelude built by re-exporting from "base"
+description:
+  An alternate @Prelude@ which removes cruft and exposes the core typeclass hierarchy of
+  "base". Specifically: @Category@; @Monoid@; @Functor@; @Applicative@; @Monad@; @Alternative@;
+  @MonadPlus@; @Foldable@; and @Traversable@ are exposed. More polymorphic functions from
+  these typeclasses replace their less general counterparts in the default @Prelude@.
+  Additionally, redundancy is avoided; for instance, @return@ and @(++)@ are not exported in
+  favour of @pure@ and @(<>)@.
+
 license:             BSD2
 license-file:        LICENSE
 author:              Duncan Burke
