@@ -17,6 +17,10 @@ category:            Prelude
 build-type:          Simple
 cabal-version:       >=1.10
 
+source-repository HEAD
+  type:     git
+  location: git@github.com:duncanburke/prelude-minimal.git
+
 library
   exposed-modules:   Prelude.Minimal
   build-depends:     base >=4.8 && <4.9
