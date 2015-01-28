@@ -48,8 +48,8 @@ module Prelude.Minimal (
     Foldable(fold, foldMap, foldr, foldr', foldl, foldl'),
     and, or, any, all, sum, product, maximum, maximumBy,
     minimum, minimumBy, elem, notElem, find,
-    Traversable(traverse, sequenceA, mapM, sequence),
-    for, forM,
+    Traversable(traverse, sequenceA),
+    for,
 
     -- ** Basic type classes
     Eq((==), (/=)),
