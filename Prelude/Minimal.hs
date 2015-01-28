@@ -67,7 +67,7 @@ module Prelude.Minimal (
     asTypeOf, error, undefined,
     seq, ($!),
 
-    -- * @Char and @String@
+    -- * @Char@ and @String@
 
     Char, String,
 
