@@ -7,10 +7,11 @@ module Prelude.Minimal (
 
     -- ** Maybe
     Maybe(Nothing, Just),
-    fromMaybe,
+    fromMaybe, isNothing, isJust,
 
     -- ** Either
     Either(Left, Right),
+    isLeft, isRight,
 
     -- ** Ordering
     Ordering(LT, EQ, GT),
